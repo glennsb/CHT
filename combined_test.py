@@ -368,7 +368,7 @@ def parse_test_snp(snpinfo, options):
         # across individuals
         tot = int(snpinfo[16])/100000
 
-    if snpinfo[6] == 0:
+    if snpinfo[6] == 0 or snpinfo[6] == "NA":
         geno_hap1 = 0
         geno_hap2 = 0
     else:
